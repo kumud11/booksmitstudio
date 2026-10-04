@@ -1,0 +1,1 @@
+"""Curated knowledge: the brief, the candidate source pool, and the prose bank."""

@@ -1,0 +1,31 @@
+flowchart LR
+    form["Studio form / CLI<br/>title, intro, source links"]
+    orch["Orchestrator<br/>routing, review budget, stop condition"]
+    ledger[("Ledger<br/>sources, claims, drafts, reports, decisions")]
+    form --> orch
+    orch --> architect
+    architect["Architect"]
+    architect <--> ledger
+    planner["Planner"]
+    architect --> planner
+    planner <--> ledger
+    researcher["Researcher"]
+    planner --> researcher
+    researcher <--> ledger
+    writer["Writer"]
+    researcher --> writer
+    writer <--> ledger
+    editor["Editor"]
+    writer --> editor
+    editor <--> ledger
+    fact_checker["FactChecker"]
+    editor --> fact_checker
+    fact_checker <--> ledger
+    voicekeeper["Voicekeeper"]
+    fact_checker --> voicekeeper
+    voicekeeper <--> ledger
+    editor -->|blocked| writer
+    fact_checker -->|pass| voicekeeper
+    output["book.md &#183; book.html &#183; preview.html<br/>review.md &#183; ledger.json"]
+    voicekeeper --> output
+    orch -.->|owns| ledger

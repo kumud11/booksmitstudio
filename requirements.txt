@@ -1,0 +1,12 @@
+# Booksmith has no dependencies.
+#
+# Python 3.11 or newer, standard library only: the HTTP server, the page
+# fetcher, the chart drawing and the screenshot tools are all written against
+# what ships with the interpreter. This file exists so that `pip install -r
+# requirements.txt` does the right thing, which is nothing.
+#
+# Optional, and not installed here:
+#   * a language model, for planning a *new* book: Ollama locally
+#     (`ollama pull qwen2.5:7b`), or ANTHROPIC_API_KEY / OPENAI_API_KEY /
+#     GEMINI_API_KEY in the environment
+#   * Edge or Chrome on the path, for `python tools/screenshots.py` only

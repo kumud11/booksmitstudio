@@ -1,0 +1,10 @@
+# Python caches
+__pycache__/
+*.pyc
+
+# Generated on every run: the studio writes books/<slug>/ and run.py writes output/
+books/
+output/
+
+# Screenshot scratch space (the committed shots live in docs/screenshots/)
+screenshots-tmp/
